@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- bootstrap stylesheet-->
+
+        <link rel="stylesheet" href="./utilities/bootstrap/css/bootstrap.min.css">
+
+        <!-- material icons -->
+
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <!-- font awesome cdn -->
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <!-- main stylesheet -->
+
+        <link rel="stylesheet" href="./css/main.css">
+
+        <title>Welcome back</title>
+    
+    </head>
+
+    <body>
+        
+        <!-- topbar area -->
+        <div class="topbar">
+            <ul class="header-buttons">
+                <li>
+                    <button class="btn btn-primary">Purchase</button>
+                </li>
+                <li class="login-button position-relative">
+                    <button class="btn btn-primary" id="loginBtn">Login</button>
+                    <form id="loginForm" hidden>
+                        <div class="row g-0">
+                            <div class="col-12 form-group">
+                                <h3>login with your existing account</h3>
+                            </div>
+                        </div>
+                        <div class="row g-0">
+                            <div class="col-12 form-group">
+                                <input type="email" name="useremail" placeholder="Email" class="form-control" required>
+                            </div>
+                        </div>
+                        <div class="row g-0">
+                            <div class="col-12 form-group">
+                                <input type="password" name="userpassword" placeholder="Password" class="form-control" required>
+                            </div>
+                        </div>
+                        <div class="row g-0">
+                            <div class="col-12 form-group text-center checkbox-contianer">
+                                <input type="checkbox" id="remberMe">
+                                <label for="remberMe">Remember me</label>
+                            </div>
+                        </div>
+                        <div class="row g-0 text-end">
+                            <div class="col-6 form-group">
+                                <input type="button" class="btn btn-white" value="Forgot Password">
+                            </div>
+                            <div class="col-6 form-group">
+                                <input type="submit" class="btn btn-white" value="Login">
+                            </div>
+                        </div>
+                    </form>
+                </li>
+                <li class="register-button position-relative">
+                    <button class="btn btn-primary d-lg-none d-md-block d-sm-block d-block" id="registerHeaderButton">Register</button>
+                    <form id="registerHeaderForm" hidden>
+                        <div class="row g-0">
+                            <div class="col-12 form-group">
+                                <h3>register here</h3>
+                            </div>
+                        </div>
+                        <div class="row g-0">
+                            <div class="col-12 form-group">
+                                <input type="text" name="fuul_name" placeholder="Full name" class="form-control" required>
+                            </div>
+                        </div>
+                        <div class="row g-0">
+                            <div class="col-12 form-group">
+                                <input type="text" name="phone_number" placeholder="Phone number" class="form-control" required>
+                            </div>
+                        </div>
+                        <div class="row g-0">
+                            <div class="col-12 form-group">
+                                <input type="text" name="city" placeholder="City" class="form-control" required>
+                            </div>
+                        </div>
+                        <div class="row g-0">
+                            <div class="col-12 form-group">
+                                <input type="email" name="email" placeholder="Email" class="form-control" required>
+                            </div>
+                        </div>
+                        <div class="row g-0">
+                            <div class="col-12 form-group">
+                                <input type="password" name="password" placeholder="Password" class="form-control" required>
+                            </div>
+                        </div>
+                        <div class="row g-0">
+                            <div class="col-12 form-group">
+                                <select name="board" class="form-control form-select" required>
+                                    <option value="">Select Board</option>
+                                    <option value="cbse">CBSE</option>
+                                    <option value="icse">ICSE</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row g-0">
+                            <div class="col-12 form-group">
+                                <select name="board" class="form-control form-select" required>
+                                    <option value="">Select Course</option>
+                                    <option value="icse">Accountancy</option>
+                                    <option value="icse">Economics</option>
+                                    <option value="icse">Business Studies</option>
+                                    <option value="icse">English</option>
+                                    <option value="cbse">Class I to V</option>
+                                    <option value="icse">Class VI to VIII</option>
+                                    <option value="icse">Class IX to X</option>
+                                    <option value="icse">Class XI to XII</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row g-0">
+                            <div class="col-12 form-group">
+                                <select name="usertype" class="form-control form-select" required>
+                                    <option value="">Select Type</option>
+                                    <option value="student">Student</option>
+                                    <option value="parent">Parent</option>
+                                    <option value="tutor">Tutor</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row g-0 text-center">
+                            <div class="col-12 form-group">
+                                <input type="submit" class="btn btn-white" value="Register now">
+                            </div>
+                        </div>
+                    </form>
+                </li>
+            </ul>
+            <ul class="social-media-icons">
+                <li>
+                    <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                </li>
+                <li>
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </li>
+                <li>
+                    <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                </li>
+            </ul>
+        </div>
+        
+        <!-- topbar area ends -->
+
+        <!-- nav area starts -->
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light p-0">
+            <div class="container-fluid p-0">
+                <a class="navbar-brand p-2" href="#">
+                    <img src="./assets/images/logo.png" alt="commerce square">
+                </a>
+                <button class="navbar-toggler p-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="material-icons">
+                        menu
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="courseDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                About
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                                <li>
+                                    <a class="dropdown-item" href="./vision.html">Vision</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="./mission.html">Mission</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="./faculity.html">Faculity</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="courseDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Courses
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="courseDropdown">
+                                <li>
+                                    <a class="dropdown-item" href="#">Accountancy</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Economics</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Business Studies</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">English</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">I to V<a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">VI to VIII<a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">IX to X<a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">XI to XII<a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./blog.html">Blogs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <!-- nav area ends -->
+
+        <section class="container page-container">
+            <div class="row g-0">
+                <nav class="col-12 breadcrumb-container" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="./blog.html">Blogs</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Art and wisdom of teaching</li>
+                    </ol>
+                </nav>
+            </div>
+            <div class="row g-0">
+                <div class="col-lg-8 col-md-9 single-blog-area">
+                    <div class="row g-0">
+                        <div class="col-12 single-blog-image">
+                            <img src="./assets/images/blog.png">
+                        </div>
+                    </div>
+                    <div class="row g-0">
+                        <div class="col-12 single-blog-content">
+                            <h3 class="blog-heading">Art and wisdom of teaching</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, molestias? Pariatur distinctio et molestias, architecto neque nam magnam accusamus minus similique laudantium beatae impedit unde nisi quo voluptatum totam autem!</p>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis, dolore velit laboriosam animi eveniet accusantium in error sequi perferendis assumenda officiis ea iste laudantium incidunt nobis ipsa! Exercitationem, sint cumque.</p>
+                            <ul>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto doloribus facilis harum quia reiciendis aliquid</li>
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus</li>
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae assumenda magni inventore.</li>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, blanditiis. Maiores architecto veniam, suscipit doloremque dignissimos quod qui.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 mx-auto my-2 d-lg-block d-md-block d-sm-none d-none blogs-sidebar">
+                    <h3>Recent Blogs</h3>
+                    <ul>
+                        <li><a href="#">Art and Wisdom of Teaching</a></li>
+                        <li><a href="#">Relationship Investment (Teachers and Students, Parents and Children)</a></li>
+                        <li><a href="#">Art and Wisdom of Parenting</a></li>
+                        <li><a href="#">Motivational Seminar</a></li>
+                        <li><a href="#">EQ and SQ Dominance on IQ</a>a</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <footer class="container-fluid">
+            <div class="row g-0">
+                <div class="col-12 footer-area">
+                    <div class="row g-0">
+                        <div class="col-lg-4 col-md-12 col-12 about-footer">
+                            <img src="./assets/images/logo.png">
+                            <p>We at commerce square are commited to provide our students the best teaching enviroment. We enhance students to perform in academics by providing resources required for their growth.</p>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-12 links-footer">
+                            <h3>Useful Links</h3>
+                            <div class="navigation">
+                                <ul>
+                                    <li>About</li>
+                                    <li>Blogs</li>
+                                    <li>Privacy Policy</li>
+                                    <li>Terms and Conditions</li>
+                                </ul>
+                                <ul>
+                                    <li>Accountancy</li>
+                                    <li>Economics</li>
+                                    <li>Business Studies</li>
+                                    <li>English</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-12 contact-footer">
+                            <h3>Reach Us</h3>
+                            <ul>
+                                <li>
+                                    <span class="material-icons">
+                                        email
+                                    </span>
+                                    <span>
+                                        commercesquare@mail.com
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="material-icons">
+                                        call
+                                    </span>
+                                    <span>
+                                        1234567890
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="material-icons">
+                                        place
+                                    </span>
+                                    <span>
+                                        215, Park Street, United States
+                                        Postal Code 10020
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- pooper js -->
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+
+        <!-- bootstrap js -->
+
+        <script src="./utilities/bootstrap/js/bootstrap.min.js"></script>
+
+        <!-- jquery -->
+
+        <script src="./utilities/bootstrap/js/jquery-3.6.1.slim.min.js"></script>
+
+        <script src="./js/main.js"></script>
+
+    </body>
+</html>
